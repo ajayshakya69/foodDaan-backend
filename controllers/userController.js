@@ -20,7 +20,6 @@ class UserController {
 
         try {
             const data = await UserService.getUserCount()
-
             if (!data.length === 0) {
                 throw new Error("users not found");
             }
@@ -29,7 +28,7 @@ class UserController {
 
 
         } catch (error) {
-            if (error.message === "users not found")
+            if (error.message === "users n1ot found")
                 res.status(404)
             next(error)
         }

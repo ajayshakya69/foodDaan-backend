@@ -58,7 +58,7 @@ class UserService {
                     count: { $sum: 1 }
                 }
             }
-        ])
+        ]) 
 
         console.log("userCount",userCount)
 
